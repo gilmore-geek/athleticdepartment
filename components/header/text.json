@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "logo": "Athletik Dept",
+    "items": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Ablauf", "href": "#ablauf" },
+      { "label": "Team", "href": "#team" },
+      { "label": "Kontakt", "href": "#kontakt" }
+    ]
+  }
+}

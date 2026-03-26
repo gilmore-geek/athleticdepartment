@@ -1,0 +1,23 @@
+{
+  "footer": {
+    "companyName": "Athletik Dept",
+    "description": "Athletiktraining, Performance Coaching und Leistungsdiagnostik in Hannover.",
+    "links": {
+      "main": [
+        { "label": "Home", "href": "#/" },
+        { "label": "Services", "href": "#services" },
+        { "label": "Team", "href": "#team" },
+        { "label": "Kontakt", "href": "#kontakt" }
+      ],
+      "legal": [
+        { "label": "Impressum", "href": "#impressum" },
+        { "label": "Datenschutz", "href": "#datenschutz" }
+      ]
+    },
+    "contact": {
+      "city": "Hannover & Region Hannover",
+      "social": "Folge uns für Updates"
+    },
+    "copyright": "© 2026 Athletik Dept. Alle Rechte vorbehalten."
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "hero": {
+    "title": "Train Hard. Stay Strong.",
+    "subtitle": "Dein Weg zu mehr Fitness beginnt hier.",
+    "cta": "Jetzt starten"
+  },
+  "nav": {
+    "logo": "Athletik Dept",
+    "items": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Ablauf", "href": "#ablauf" },
+      { "label": "Team", "href": "#team" },
+      { "label": "Kontakt", "href": "#kontakt" }
+    ]
+  },
+  "intro": {
+    "heading": "Kennst du das?",
+    "problems": [
+      "Du wirst immer überlaufen oder weggedrückt?",
+      "Du brauchst länger, um dich nach Aktionen zu erholen?",
+      "Du reagierst langsamer als deine Gegner?",
+      "Du hast immer mal wieder kleinere Verletzungen?",
+      "Du kannst deine Fähigkeiten im Spiel nicht richtig abrufen?",
+      "Du bist am Ende des Spiels platt – dein Kopf will, aber dein Körper kann nicht mehr?"
+    ]
+  },
+  "benefits": {
+    "heading": "Was wäre wenn?",
+    "items": [
+      "Du bist physisch überlegen – schneller, stabiler und schwer zu schlagen!",
+      "Du hältst bis zur letzten Sekunde physisch und mental voll durch!",
+      "Du bist explosiv und reaktionsschnell!",
+      "Dein Körper hält Belastungen zuverlässig stand.",
+      "Du regenerierst schneller und hältst ein höheres Tempo!",
+      "Dein Körper gibt dir die Basis, damit deine Technik glänzen kann!",
+      "Du kannst mehr – und du weißt es."
+    ]
+  },
+  "approach": {
+    "intro": "Zu jedem Problem gibt es eine Lösung. Und du hast alles, was es dafür braucht – den Willen, dich zu verbessern. Was dir vielleicht noch fehlt, ist ein klarer Weg. Ein System. Eine Begleitung, die dich gezielt dahin bringt, wo du hinwillst.",
+    "cta": "Genau dabei helfen wir dir, durch…",
+    "description": "Athletiktraining und Performance Coaching in Hannover & Region Hannover oder auch deutschlandweit per online Coaching.\n\nZusätzlich erstellen wir dir mit mehrjähriger Erfahrung & Know-how einen Plan, der zu dir passt.\nNicht als kurzfristiger Motivationsschub, sondern als echte Veränderung – spürbar, messbar, nachhaltig.",
+    "closing": "Du musst nicht perfekt starten. Du musst nur starten – den Rest entwickeln wir gemeinsam. Das Beste in dir ist bereits da. Wir helfen dir, es freizusetzen."
+  },
+  "services": {
+    "heading": "Unsere Leistungen",
+    "items": [
+      {
+        "title": "Trainingspläne",
+        "subtitle": "systematisch. praxisnah. individuell.",
+        "description": "Unsere Programme basieren auf einem durchdachten System – strukturiert, zielgerichtet und sportartspezifisch. Du kannst mit erprobten Plänen arbeiten oder dir deinen Trainingsplan individuell auf dich und deine Ziele zuschneiden lassen. Ob Schnelligkeit, Kraft, Mobilität oder Belastungssteuerung: Wir liefern dir die Grundlage, damit dein Training Wirkung zeigt.",
+        "link": "Erfahre mehr über unsere Trainingspläne"
+      },
+      {
+        "title": "Consulting",
+        "subtitle": "für Coaches, Teams und Strukturen",
+        "description": "Du willst dein Training ganzheitlich aufstellen oder ein Athletiksystem im Verein etablieren? Wir unterstützen dich bei der Planung, Integration und Weiterentwicklung deiner Trainingskonzepte. Von Periodisierung bis zu Tests, von Jugend bis Herrenbereich – wir denken Athletik strategisch und nachhaltig. Unsere Erfahrung hilft dir, Strukturen aufzubauen, die Leistung fördern – langfristig.",
+        "link": "Erfahre mehr über unser Beratungs-Angebot"
+      },
+      {
+        "title": "Einzel- & Teamcoaching",
+        "subtitle": "live oder digital. immer persönlich.",
+        "description": "Wir coachen dich – ob als einzelner Athlet oder als Team – gezielt dort, wo du stehst. Im 1:1 arbeiten wir intensiv an deiner athletischen Entwicklung, Technik und Umsetzung. Für Teams schaffen wir Einheiten, die Athletik spielnah trainierbar machen und ins Gesamtkonzept passen. Ob auf dem Platz, in der Halle oder online: Du bekommst Input, der direkt wirkt.",
+        "link": "Erfahre mehr über unser Coaching"
+      }
+    ]
+  },
+  "process": {
+    "heading": "Unser Ablauf",
+    "intro": "Athletiktraining und Personal Training in Hannover & der Region Hannover – als Einzel- oder Teamtraining, live vor Ort oder digital.\n\nUnser Coaching startet nicht mit einem Plan von der Stange – sondern mit einer fundierten Leistungsdiagnostik. Wir messen, analysieren und strukturieren dein Training gezielt auf Basis deiner Stärken und Schwächen.\n\nDurch klare Schritte, regelmäßige Auswertung und persönlichen Austausch schaffen wir einen Rahmen, der Fortschritt messbar macht – und dauerhaft sichert.",
+    "diagnostics": [
+      {
+        "step": "01",
+        "title": "Anamnese & Zielsetzung",
+        "description": "Erfassung des aktuellen Gesundheitszustands, Verletzungshistorie, sportlichen Hintergrunds und persönlicher Ziele"
+      },
+      {
+        "step": "02",
+        "title": "Körperliche Parameter",
+        "description": "Messung von Körpergröße, Körperzusammensetzung (Körpergewicht und anthropometrischen Daten)"
+      },
+      {
+        "step": "03",
+        "title": "Kraftdiagnostik",
+        "description": "Tests der Maximalkraft, Sprungkraft, Kraftausdauer, Explosivkraft und reaktiven Kraft"
+      },
+      {
+        "step": "04",
+        "title": "Schnelligkeit & Agilität",
+        "description": "Tests der Geschwindigkeiten in verschiedenen Sprintdistanzen auf 10m, 20m und 50m, Richtungswechsel und Agilität"
+      },
+      {
+        "step": "05",
+        "title": "Ausdauerdiagnostik",
+        "description": "Aerobe Kapazität (Kraftaufwand über einen längeren Zeitraum) & Anaerobe Schwelle (Kraftaufwand über einen kurzen Zeitraum)"
+      },
+      {
+        "step": "06",
+        "title": "Beweglichkeit & Mobilität",
+        "description": "Functional Movement Screen (FMS) und Beweglichkeitsmessungen (Range of Motion bei Knie, Hüfte, Schulter etc.)"
+      },
+      {
+        "step": "07",
+        "title": "Stabilität & Koordination",
+        "description": "Einbeinstand-Test, Y-Balance-Test, Core-Stabilitätstest"
+      }
+    ],
+    "analysis": [
+      {
+        "step": "01",
+        "title": "Auswertung",
+        "description": "Analyse aller erhoben Daten strukturiert und nachvollziehbar"
+      },
+      {
+        "step": "02",
+        "title": "Stärken und Schwächen",
+        "description": "Auswertung zeigt individuelle Ressourcen – aber auch gezielte Ansatzpunkte für Verbesserung"
+      },
+      {
+        "step": "03",
+        "title": "Optimierung",
+        "description": "Konkrete und praxisnahe Handlungsempfehlungen basierend auf den Ergebnissen"
+      },
+      {
+        "step": "04",
+        "title": "Erstellung Trainingsplan",
+        "description": "Erstellung eines individuellen Trainingsplans - basierend auf den erhobene Daten, abgestimmt auf deine Ziele, deinen Alltag und sportl. Anforderungen"
+      },
+      {
+        "step": "05",
+        "title": "Verletzungsprävention",
+        "description": "Erstellung einer Liste an Tipps zur Verletzungsprävention und Regeneration"
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Was unsere Kunden sagen",
+    "intro": "Wir begleiten Einzelathleten und Teams aus Hannover und der Region Hannover mit individuellem Athletiktraining und Performance Coaching.\nUnser Fokus liegt auf langfristiger Leistungsentwicklung – datenbasiert, praxisnah und sportartspezifisch.",
+    "items": [
+      {
+        "author": "Kevin K.",
+        "title": "Headcoach – Hannover Grizzlies, Jugend Flag Football",
+        "quote": "In der diesjährigen Off-Season wurde das Athletiktraining der Hannover Little Grizzlies durch Noah und Tony von Athletik Dept. begleitet. Die beiden konnten durch ihre offene und lockere Art direkt das Vertrauen der Spieler für sich gewinnen. Gemeinsam wurde an den Schwerpunkten Koordination, Schnellkraft, Schnelligkeit und Agilität gearbeitet. Wir bedanken uns herzlich für die intensive Vorbereitung und freuen uns, den Trainingsfortschritt in dieser Saison auf den Platz zu übertragen."
+      },
+      {
+        "author": "René G. & Daniel F.",
+        "title": "Trainerteam – ehem. TuS Wettbergen, 1. Herren und 1. Damen, Handball",
+        "quote": "Die Zusammenarbeit mit Noah und Tony im Bereich Athletiktraining war für unsere Mannschaften (1. Damen und 1. Herren) ein echter Gewinn. Das wöchentliche, handballspezifische Athletiktraining während der Vorbereitung und Saison wurde extrem professionell gestaltet, inklusive einer fundierten Anamnese zu Beginn und fortlaufender Diagnostik. Besonders hervorzuheben ist, wie individuell die Trainer auf jede Spielerin und jeden Spieler eingegangen sind und maßgeschneiderte Pläne entwickelt haben, was zu deutlich sichtbaren Fortschritten führte."
+      },
+      {
+        "author": "Oliver K.",
+        "title": "Cheftrainer – Hiddestorfer Füchse, B-Jugend, Handball",
+        "quote": "Seit nun etwas mehr als einem halben Jahr macht der Großteil meiner B-Handballjungs mit Noah und Tony kombiniertes Kraft-Athletiktraining. Obwohl die Jungs dort oft an ihre körperlichen Grenzen gebracht werden, gehen sie jedes Mal gerne dorthin. Und das Coolste ist, dass ich und auch die Jungs selbst merken, wie viel kräftiger und robuster sie in den letzten Monaten geworden sind. Und das ist so wichtig in unserem körperbetonten Sport."
+      }
+    ]
+  },
+  "team": {
+    "heading": "Über uns",
+    "intro": "Wir sind Athletik Dept – Coaches für Athletiktraining, Performance Coaching und Leistungsdiagnostik in Hannover & der Region Hannover.",
+    "members": [
+      {
+        "name": "Noah D.",
+        "title": "Coach & Mitgründer",
+        "credentials": "B.A. Fitnesstraining, Athletiktrainer A-Lizenz i.A., Fitnesstrainer A-Lizenz i.A., Kraftsportler & Ex-Wide Receiver der Hannover Grizzlies (1. Herren)",
+        "quote": "Ich will wissen, was funktioniert – und Athleten zeigen, wie sie ihr volles Potenzial abrufen können."
+      },
+      {
+        "name": "Tony N.",
+        "title": "Coach & Mitgründer",
+        "credentials": "Athletiktrainer Lizenz (spez. Fußball), Medizinischer Trainer Lizenz, A-Lizenz Fitnesstrainer, Kraftsportler & Fußballfanatiker",
+        "quote": "Erfolg beginnt mit Klarheit. Wer Leistung verstehen will, muss sie messbar machen."
+      }
+    ],
+    "approach": "Unsere Arbeit beginnt nicht mit einem Trainingsplan – sondern mit einem klaren Blick auf den Ist-Zustand. Diagnostik, Analyse, Trainingssteuerung: Wir messen, hinterfragen und optimieren – damit du/ihr gezielt besser wirst/werdet. Dabei kombinieren wir bewährte Trainingsprinzipien mit sportartspezifischen Anforderungen. Für dich heißt das konkret: kein Standardprogramm, sondern ein Plan, der zu dir passt.\n\nEs gibt viele Wege zu trainieren. Aber nur wenige führen konsequent zum Ziel. Deshalb arbeiten wir zielgerichtet statt pauschal, partnerschaftlich statt belehrend, und datenbasiert statt gefühlt."
+  },
+  "cta": {
+    "heading": "Interesse geweckt?",
+    "subheading": "Buche jetzt einen Termin",
+    "description": "Ob Fragen, erster Austausch oder konkreter Start – wir nehmen uns Zeit für dich. In einem unverbindlichen Gespräch klären wir, wo du stehst, was du brauchst und wie wir dich unterstützen können. Online oder persönlich – unkompliziert, direkt und im offenen Austausch.",
+    "button": "Termin buchen"
+  },
+  "footer": {
+    "companyName": "Athletik Dept",
+    "description": "Athletiktraining, Performance Coaching und Leistungsdiagnostik in Hannover.",
+    "links": {
+      "main": [
+        { "label": "Home", "href": "#/" },
+        { "label": "Services", "href": "#services" },
+        { "label": "Team", "href": "#team" },
+        { "label": "Kontakt", "href": "#kontakt" }
+      ],
+      "legal": [
+        { "label": "Impressum", "href": "#impressum" },
+        { "label": "Datenschutz", "href": "#datenschutz" }
+      ]
+    },
+    "contact": {
+      "city": "Hannover & Region Hannover",
+      "social": "Folge uns für Updates"
+    },
+    "copyright": "© 2026 Athletik Dept. Alle Rechte vorbehalten."
+  }
+}
