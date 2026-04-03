@@ -58,18 +58,72 @@ function initBody(data) {
       .join('');
   }
 
-  // Testimonials
-  const testimonialsGrid = document.querySelector('.testimonials-grid');
-  if (testimonialsGrid && data.testimonials && data.testimonials.items) {
-    testimonialsGrid.innerHTML = data.testimonials.items
-      .map(testimonial => `
-        <div class="testimonial-card">
-          <p class="testimonial-quote">${testimonial.quote}</p>
-          <p class="testimonial-author">${testimonial.author}</p>
-          <p class="testimonial-title">${testimonial.title}</p>
-        </div>
+  // Testimonials - Interactive Display
+  const quoteDisplay = document.querySelector('#testimonialQuote');
+  const authorsContainer = document.querySelector('#testimonialsAuthors');
+
+  if (quoteDisplay && authorsContainer && data.testimonials && data.testimonials.items) {
+    const testimonials = data.testimonials.items;
+    let currentIndex = 0;
+    let autoRotateInterval = null;
+
+    // Funktion zum Anzeigen eines Zitats
+    function displayTestimonial(index) {
+      const testimonial = testimonials[index];
+      quoteDisplay.textContent = testimonial.quote;
+      currentIndex = index;
+
+      // Update active button
+      const buttons = authorsContainer.querySelectorAll('.author-button');
+      buttons.forEach((btn, idx) => {
+        btn.classList.toggle('active', idx === index);
+      });
+
+      // Reset auto-rotate timer
+      resetAutoRotate();
+    }
+
+    // Auto-rotate Funktion
+    function autoRotate() {
+      const nextIndex = (currentIndex + 1) % testimonials.length;
+      displayTestimonial(nextIndex);
+    }
+
+    // Auto-rotate Timer starten
+    function resetAutoRotate() {
+      // Alten Timer clearen
+      if (autoRotateInterval) {
+        clearInterval(autoRotateInterval);
+      }
+      // Neuen Timer starten (2 Sekunden)
+      autoRotateInterval = setInterval(autoRotate, 2000);
+    }
+
+    // erstelle die Autorenliste
+    authorsContainer.innerHTML = testimonials
+      .map((testimonial, index) => `
+        <button class="author-button ${index === 0 ? 'active' : ''}" data-index="${index}">
+          <span class="author-name">${testimonial.author}</span>
+          <span class="author-role">${testimonial.title}</span>
+        </button>
       `)
       .join('');
+
+    // Add event listeners to author buttons
+    authorsContainer.querySelectorAll('.author-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const index = parseInt(button.getAttribute('data-index'));
+        displayTestimonial(index);
+      });
+    });
+
+    // Display the first testimonial on load and start auto-rotate
+    displayTestimonial(0);
+  } else {
+    console.warn('⚠️ Testimonials-Elemente nicht gefunden:', {
+      quoteDisplay: !!quoteDisplay,
+      authorsContainer: !!authorsContainer
+    });
   }
 
   // Team Members

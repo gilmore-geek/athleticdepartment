@@ -283,51 +283,116 @@
     opacity: 0.9;
   }
 
-  & .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+  & .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-    & .testimonial-card {
-      background: var(--color-primary-10);
-      border: 1px solid var(--color-primary);
-      border-radius: 8px;
-      padding: 2rem;
-      transition: all 0.3s ease;
+  & .testimonials-display {
+    background: var(--color-primary-10);
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+    padding: 3rem;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 0.5s ease-in-out;
 
-      & .testimonial-quote {
-        font-style: italic;
-        margin-bottom: 1rem;
-        line-height: 1.8;
-        color: var(--color-light-50);
+    & .testimonial-quote-large {
+      font-size: 1.3rem;
+      font-style: italic;
+      line-height: 1.8;
+      color: var(--color-light-50);
 
-        &::before {
-          content: '"';
-          color: var(--color-primary);
-          font-size: 2rem;
-          font-weight: 700;
-          line-height: 0.5;
-          margin-right: 0.3rem;
-        }
-      }
-
-      & .testimonial-author {
-        font-weight: 600;
+      &::before {
+        content: '"';
         color: var(--color-primary);
-        margin-bottom: 0.25rem;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 0.5;
+        margin-right: 0.3rem;
       }
 
-      & .testimonial-title {
-        font-size: 0.9rem;
-        color: var(--color-gray-400);
-      }
-
-      &:hover {
-        background: var(--color-primary-15);
-        transform: translateY(-5px);
+      &::after {
+        content: '"';
+        color: var(--color-primary);
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 0.5;
+        margin-left: 0.3rem;
       }
     }
   }
+
+  & .testimonials-authors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    & .author-button {
+      padding: 1rem 1.5rem;
+      background: transparent;
+      border: 2px solid var(--color-primary);
+      color: var(--color-light-50);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      min-width: 180px;
+
+      & .author-name {
+        font-weight: 700;
+        font-size: 0.95rem;
+        margin-bottom: 0.25rem;
+      }
+
+      & .author-role {
+        font-size: 0.75rem;
+        opacity: 0.8;
+        line-height: 1.4;
+      }
+
+      &:hover:not(.active) {
+        background: var(--color-primary-10);
+        transform: translateY(-2px);
+      }
+
+      &.active {
+        background: var(--color-primary);
+        color: var(--color-dark-900);
+
+        & .author-name {
+          font-weight: 700;
+        }
+
+        & .author-role {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 }
 
 /* ========================================
@@ -472,9 +537,40 @@
   .benefits-grid,
   .services-grid,
   .process-steps,
-  .testimonials-grid,
   .team-members {
     grid-template-columns: 1fr;
+  }
+
+  .testimonials-section {
+    & .testimonials-display {
+      padding: 2rem;
+      min-height: auto;
+    }
+
+    & .testimonial-quote-large {
+      font-size: 1rem;
+
+      &::before,
+      &::after {
+        font-size: 2rem;
+      }
+    }
+
+    & .testimonials-authors {
+      & .author-button {
+        padding: 0.8rem 1rem;
+        font-size: 0.8rem;
+        min-width: 150px;
+
+        & .author-name {
+          font-size: 0.85rem;
+        }
+
+        & .author-role {
+          font-size: 0.7rem;
+        }
+      }
+    }
   }
 
   .process-section {
