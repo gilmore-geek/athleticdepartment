@@ -126,6 +126,30 @@ function initBody(data) {
     });
   }
 
+  // Intro/Benefits Overlay Card Switching
+  const introCard = document.getElementById('introCard');
+  const benefitsCard = document.getElementById('benefitsCard');
+
+  if (introCard && benefitsCard) {
+    function setActiveCard(cardType) {
+      if (cardType === 'intro') {
+        introCard.classList.add('active');
+        benefitsCard.classList.remove('active');
+      } else if (cardType === 'benefits') {
+        benefitsCard.classList.add('active');
+        introCard.classList.remove('active');
+      }
+    }
+
+    // Set intro as active by default (already in HTML, but ensure it)
+    introCard.classList.add('active');
+    benefitsCard.classList.remove('active');
+
+    // Add mouseenter listeners for card switching
+    introCard.addEventListener('mouseenter', () => setActiveCard('intro'));
+    benefitsCard.addEventListener('mouseenter', () => setActiveCard('benefits'));
+  }
+
   // Team Members
   const teamMembers = document.querySelector('.team-members');
   if (teamMembers && data.team && data.team.members) {

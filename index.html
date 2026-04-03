@@ -59,22 +59,25 @@
 
     <!-- BODY / MAIN CONTENT -->
     <main class="body">
-      <!-- Intro Section -->
-      <section class="intro-section">
-        <div class="container">
-          <h2 class="intro-heading" data-field="intro.heading">Kennst du das?</h2>
-          <div class="problems-grid" data-field="intro.problems">
-            <!-- Dynamisch gefüllt -->
+      <!-- Intro/Benefits Overlay Section -->
+      <section class="intro-benefits-overlay-section">
+        <!-- Intro Card (Kennst du das) -->
+        <div class="intro-benefits-card intro-card active" id="introCard">
+          <div class="intro-benefits-content">
+            <h2 class="intro-benefits-heading" data-field="intro.heading">Kennst du das?</h2>
+            <div class="problems-grid" data-field="intro.problems">
+              <!-- Dynamisch gefüllt -->
+            </div>
           </div>
         </div>
-      </section>
 
-      <!-- Benefits Section -->
-      <section class="benefits-section">
-        <div class="container">
-          <h2 class="benefits-heading" data-field="benefits.heading">Was wäre wenn?</h2>
-          <div class="benefits-grid" data-field="benefits.items">
-            <!-- Dynamisch gefüllt -->
+        <!-- Benefits Card (Was wäre wenn) -->
+        <div class="intro-benefits-card benefits-card" id="benefitsCard">
+          <div class="intro-benefits-content">
+            <h2 class="intro-benefits-heading" data-field="benefits.heading">Was wäre wenn?</h2>
+            <div class="benefits-grid" data-field="benefits.items">
+              <!-- Dynamisch gefüllt -->
+            </div>
           </div>
         </div>
       </section>
@@ -107,17 +110,19 @@
           <h2 class="section-heading" data-field="process.heading">Unser Ablauf</h2>
           <p class="process-intro" data-field="process.intro"></p>
           
-          <div class="process-stage">
-            <h3>Leistungsdiagnostik</h3>
-            <div class="process-steps" data-field="process.diagnostics">
-              <!-- Dynamisch gefüllt -->
+          <div class="process-stages-wrapper">
+            <div class="process-stage">
+              <h3>Leistungsdiagnostik</h3>
+              <div class="process-steps" data-field="process.diagnostics">
+                <!-- Dynamisch gefüllt -->
+              </div>
             </div>
-          </div>
 
-          <div class="process-stage">
-            <h3>Ergebnisanalyse</h3>
-            <div class="process-steps" data-field="process.analysis">
-              <!-- Dynamisch gefüllt -->
+            <div class="process-stage">
+              <h3>Ergebnisanalyse</h3>
+              <div class="process-steps" data-field="process.analysis">
+                <!-- Dynamisch gefüllt -->
+              </div>
             </div>
           </div>
         </div>
