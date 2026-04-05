@@ -11,6 +11,7 @@
       { "label": "Services", "href": "./index.html#services" },
       { "label": "Ablauf", "href": "./index.html#ablauf" },
       { "label": "Team", "href": "./index.html#team" },
+      { "label": "Trainingspläne", "href": "./trainingsplan.html" },
       { "label": "Consulting", "href": "./consulting.html" },
       { "label": "Kontakt", "href": "./index.html#kontakt" }
     ]

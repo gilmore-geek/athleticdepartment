@@ -18,15 +18,25 @@ function initBody(data) {
   // Services Grid
   const servicesGrid = document.querySelector('.services-grid');
   if (servicesGrid && data.services && data.services.items) {
+    const serviceLinks = {
+      trainingspläne: './trainingsplan.html',
+      consulting: './consulting.html'
+    };
+
     servicesGrid.innerHTML = data.services.items
-      .map(service => `
+      .map(service => {
+        const serviceKey = service.title.toLowerCase();
+        const href = serviceLinks[serviceKey] || '#kontakt';
+
+        return `
         <div class="service-card">
           <h3>${service.title}</h3>
           <p class="subtitle">${service.subtitle}</p>
           <p>${service.description}</p>
-          <a href="#kontakt">${service.link} →</a>
+          <a href="${href}">${service.link} →</a>
         </div>
-      `)
+      `;
+      })
       .join('');
   }
 

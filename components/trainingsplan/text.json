@@ -1,0 +1,94 @@
+{
+  "heading": "Trainingspläne",
+  "subheading": "Systematisch. Praxisnah. Individuell.",
+  "intro": "Unsere Trainingspläne sind auf unterschiedliche Leistungsniveaus zugeschnitten. Du bekommst klare Strukturen, nachvollziehbare Progression und praxisnahe Inhalte für dein Athletiktraining.",
+  "plans": [
+    {
+      "level": "Anfänger",
+      "target": "Personen mit wenig oder keiner Trainingserfahrung. Der perfekte Einstieg in den Kraftsport mit Fokus auf Grundbewegungen, Technik und einer sicheren Basis.",
+      "duration": "4 Wochen",
+      "frequency": "2-3 Trainingseinheiten/Woche",
+      "format": "Ganzkörper",
+      "periodization": "Keine, gleichbleibende Struktur",
+      "progression": "Einfach",
+      "baseTips": "Warm-up, Ernährung, Regeneration und Schlaf",
+      "planFormat": "Statische PDF",
+      "buttons": [
+        {
+          "id": "beginner-fullbody",
+          "label": "29 EUR | Anfänger (Ganzkörper) kaufen"
+        }
+      ]
+    },
+    {
+      "level": "Fortgeschritten",
+      "target": "Trainierende mit 6+ Monaten Erfahrung, die stagnieren oder gezielt aufbauen wollen. Dieser Plan setzt gezielte Reize fuer Muskelwachstum, Kraft und Belastbarkeit.",
+      "duration": "8 Wochen",
+      "frequency": "2-4 Trainingseinheiten/Woche",
+      "format": "Ganzkörper & Split",
+      "periodization": "Lineare Steigerung / Deload",
+      "progression": "Strukturiert mit Planvorgaben",
+      "baseTips": "Warm-up, Ernährung, Regeneration und Schlaf",
+      "planFormat": "Excel-Datei",
+      "buttons": [
+        {
+          "id": "advanced-fullbody",
+          "label": "59 EUR | Fortgeschritten (Ganzkörper) kaufen"
+        },
+        {
+          "id": "advanced-2split",
+          "label": "59 EUR | Fortgeschritten (2er Split) kaufen"
+        }
+      ]
+    },
+    {
+      "level": "Elite",
+      "target": "Fuer hochambitionierte Athleten, Coaches oder Personen mit klaren Leistungszielen. Der Plan ist auf maximale Kontrolle, Leistung und Entwicklung ausgelegt.",
+      "duration": "12 Wochen inkl. Testing & Deload",
+      "frequency": "2-4 Trainingseinheiten/Woche",
+      "format": "Ganzkörper & Split",
+      "periodization": "Zyklisch / Phasenspezifisch (Hypertrophie, Kraft)",
+      "progression": "Strategisch inkl. 1RM-Tests & Zyklusplanung",
+      "baseTips": "Warm-up, Ernährung, Regeneration und Schlaf",
+      "planFormat": "Excel-Datei",
+      "buttons": [
+        {
+          "id": "elite-fullbody",
+          "label": "89 EUR | Elite (Ganzkörper) kaufen"
+        },
+        {
+          "id": "elite-2split",
+          "label": "89 EUR | Elite (2er Split) kaufen"
+        }
+      ]
+    }
+  ],
+  "bundles_heading": "Zusatzpakete",
+  "bundles_intro": "Mehrere Pläne kombiniert als Bundle für abgestufte Entwicklung.",
+  "bundles": [
+    {
+      "id": "bundle-1",
+      "title": "Bundle I: Anfänger (Ganzkörper) + Fortgeschritten (Ganzkörper)",
+      "button": "79 EUR | Bundle I kaufen"
+    },
+    {
+      "id": "bundle-2",
+      "title": "Bundle II: Anfänger (Ganzkörper) + Fortgeschritten (Ganzkörper) + Elite (Ganzkörper)",
+      "button": "159 EUR | Bundle II kaufen"
+    },
+    {
+      "id": "bundle-3",
+      "title": "Bundle III: Fortgeschritten (Ganzkörper) + Elite (Ganzkörper)",
+      "button": "129 EUR | Bundle III kaufen"
+    },
+    {
+      "id": "bundle-4",
+      "title": "Bundle IV: Fortgeschritten (2er Split) + Elite (2er Split)",
+      "button": "129 EUR | Bundle IV kaufen"
+    }
+  ],
+  "addon_heading": "Form-Check-Service (Add-on)",
+  "addon_description": "Inhalt: einmaliger Form-Check der Übungsausführungen.",
+  "addon_note": "Hinweis: Bitte melde dich nach dem Kauf bei uns (z. B. über das Kontaktformular), um weitere Details zu klären.",
+  "addon_button": "15 EUR | Form-Check-Service buchen"
+}

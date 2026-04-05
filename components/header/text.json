@@ -6,6 +6,7 @@
       { "label": "Services", "href": "#services" },
       { "label": "Ablauf", "href": "#ablauf" },
       { "label": "Team", "href": "#team" },
+      { "label": "Trainingspläne", "href": "./trainingsplan.html" },
       { "label": "Consulting", "href": "./consulting.html" },
       { "label": "Kontakt", "href": "#kontakt" }
     ]
