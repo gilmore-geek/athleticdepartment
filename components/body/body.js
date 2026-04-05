@@ -37,8 +37,10 @@ function initBody(data) {
       .map(step => `
         <div class="process-step">
           <div class="process-step-number">${step.step}</div>
-          <h4>${step.title}</h4>
-          <p>${step.description}</p>
+          <div class="process-step-text">
+            <h4>${step.title}</h4>
+            <p>${step.description}</p>
+          </div>
         </div>
       `)
       .join('');
@@ -51,8 +53,10 @@ function initBody(data) {
       .map(step => `
         <div class="process-step">
           <div class="process-step-number">${step.step}</div>
-          <h4>${step.title}</h4>
-          <p>${step.description}</p>
+          <div class="process-step-text">
+            <h4>${step.title}</h4>
+            <p>${step.description}</p>
+          </div>
         </div>
       `)
       .join('');
@@ -154,14 +158,18 @@ function initBody(data) {
   const teamMembers = document.querySelector('.team-members');
   if (teamMembers && data.team && data.team.members) {
     teamMembers.innerHTML = data.team.members
-      .map(member => `
+      .map(member => {
+        // Map member names to image files (lowercase)
+        const imageName = member.name.split(' ')[0].toLowerCase();
+        return `
         <div class="team-member">
+          <div class="team-member-image" style="background-image: url('../../assets/images/${imageName}.png')"></div>
           <h3>${member.name}</h3>
           <p class="title">${member.title}</p>
           <p class="credentials">${member.credentials}</p>
           <p class="quote">"${member.quote}"</p>
         </div>
-      `)
+      `})
       .join('');
   }
 

@@ -78,18 +78,11 @@
   list-style: none;
   padding: 1rem;
   background: var(--color-light-50);
-  border-left: 4px solid var(--color-primary);
+
   color: var(--color-gray-900);
   box-shadow: 0 2px 8px var(--color-black-08);
   border-radius: 4px;
   transition: transform 0.3s ease;
-}
-
-.intro-card .problems-grid li::before {
-  content: "✓";
-  color: var(--color-primary);
-  font-weight: bold;
-  margin-right: 0.5rem;
 }
 
 .intro-card .problems-grid li:hover {
@@ -141,11 +134,6 @@
   transition: transform 0.3s ease;
 }
 
-.benefits-card .benefits-grid li::before {
-  content: "⚡";
-  margin-right: 0.5rem;
-}
-
 .benefits-card .benefits-grid li:hover {
   transform: translateY(-3px);
 }
@@ -175,9 +163,35 @@
 }
 
 .approach-section .approach-content {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  text-align: left;
+  max-width: none;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 400px;
+  width: 100%;
+}
+
+.approach-section .approach-text {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 60%;
+}
+
+.approach-section .approach-image {
+  flex: 1;
+  background-image: url('../../assets/images/marvin-cors-obGBzomHstc-unsplash+(1)+(1).webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 12px 12px 0;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+  min-height: 400px;
 }
 
 .approach-section .approach-content p {
@@ -213,7 +227,6 @@
   padding: 2rem;
   box-shadow: 0 4px 12px var(--color-black-08);
   transition: all 0.3s ease;
-  border-top: 4px solid var(--color-primary);
 }
 
 .services-section .service-card h3 {
@@ -257,7 +270,8 @@
 
 .process-section {
   padding: 5rem 0;
-  background: var(--color-light-100);
+  /* background: var(--color-light-100); */
+  background: #fdfbf4;
 }
 
 .process-section .section-heading {
@@ -289,48 +303,55 @@
 .process-steps {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+
+  /* background: #F0D8CC !important; */
+  gap: 0.5rem;
 }
 
 .process-step {
-  background: var(--color-light-50);
-  padding: 2rem;
-  border-left: 6px solid var(--color-primary);
-  border-top: 1px solid var(--color-gray-900);
-  border-bottom: 1px solid var(--color-gray-900);
+  /* background: var(--color-light-50); */
+  /* border-top: 2px solid white;
+  border-bottom: 2px solid white; */
+  background: white;
+  /* border-left: 3px solid var(--color-gray-700); */
   border-radius: 0;
   box-shadow: none;
   transition: all 0.3s ease;
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
 }
 
 .process-step-number {
+  color: var(--color-dark-900);
+  border-right: 1px solid var(--color-dark-900);;
+  width: auto;
+  height: 60%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  color: var(--color-gray-900);
-  width: auto;
-  height: auto;
   border-radius: 0;
   font-weight: 700;
   margin-bottom: 0;
   font-size: 1.5rem;
   min-width: 50px;
-  flex-shrink: 0;
+}
+
+.process-step-text {
+  padding: 10px 5px 5px 5px;
+  margin-left: 10px;
 }
 
 .process-step h4 {
-  margin: 0 0 0.5rem 0;
-  color: var(--color-gray-900);
+  margin: 5px 0;
+  color: var(--color-dark-700);
   font-size: 1.1rem;
 }
 
 .process-step p {
   margin: 0;
-  color: var(--color-gray-700);
+  color: var(--color-dark-700);
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -429,6 +450,7 @@
   align-items: flex-start;
   text-align: left;
   min-width: 180px;
+  max-width: 280px;
 }
 
 .testimonials-section .author-button .author-name {
@@ -450,7 +472,6 @@
 
 .testimonials-section .author-button.active {
   background: var(--color-primary);
-  color: var(--color-dark-900);
 }
 
 .testimonials-section .author-button.active .author-name {
@@ -471,14 +492,13 @@
     transform: translateY(0);
   }
 }
-}
 
 /* ========================================
    TEAM SECTION
    ======================================== */
 
 .team-section {
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .team-section .team-approach {
@@ -502,6 +522,16 @@
   border-radius: 8px;
   text-align: center;
   transition: all 0.3s ease;
+}
+
+.team-section .team-member-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 2px 6px var(--color-black-12);
 }
 
 .team-section .team-member h3 {
@@ -676,5 +706,14 @@
 
   .cta-section .cta-subheading {
     font-size: 1.5rem;
+  }
+
+  .approach-section .approach-image {
+    display: none;
+  }
+
+  .approach-section .approach-content {
+    display: block;
+    text-align: center;
   }
 }

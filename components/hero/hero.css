@@ -57,12 +57,12 @@
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 8px 20px var(--color-primary-30);
+    box-shadow: 0 4px 10px var(--color-primary-30);
 
     &:hover {
       background-color: var(--color-primary-dark);
       transform: translateY(-3px);
-      box-shadow: 0 12px 28px var(--color-primary-30);
+      box-shadow: 0 6px 18px var(--color-primary-30);
     }
 
     &:active {

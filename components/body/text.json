@@ -56,64 +56,64 @@
     "intro": "Athletiktraining und Personal Training in Hannover & der Region Hannover – als Einzel- oder Teamtraining, live vor Ort oder digital.\n\nUnser Coaching startet nicht mit einem Plan von der Stange – sondern mit einer fundierten Leistungsdiagnostik. Wir messen, analysieren und strukturieren dein Training gezielt auf Basis deiner Stärken und Schwächen.\n\nDurch klare Schritte, regelmäßige Auswertung und persönlichen Austausch schaffen wir einen Rahmen, der Fortschritt messbar macht – und dauerhaft sichert.",
     "diagnostics": [
       {
-        "step": "01",
+        "step": "1",
         "title": "Anamnese & Zielsetzung",
         "description": "Erfassung des aktuellen Gesundheitszustands, Verletzungshistorie, sportlichen Hintergrunds und persönlicher Ziele"
       },
       {
-        "step": "02",
+        "step": "2",
         "title": "Körperliche Parameter",
         "description": "Messung von Körpergröße, Körperzusammensetzung (Körpergewicht und anthropometrischen Daten)"
       },
       {
-        "step": "03",
+        "step": "3",
         "title": "Kraftdiagnostik",
         "description": "Tests der Maximalkraft, Sprungkraft, Kraftausdauer, Explosivkraft und reaktiven Kraft"
       },
       {
-        "step": "04",
+        "step": "4",
         "title": "Schnelligkeit & Agilität",
         "description": "Tests der Geschwindigkeiten in verschiedenen Sprintdistanzen auf 10m, 20m und 50m, Richtungswechsel und Agilität"
       },
       {
-        "step": "05",
+        "step": "5",
         "title": "Ausdauerdiagnostik",
         "description": "Aerobe Kapazität (Kraftaufwand über einen längeren Zeitraum) & Anaerobe Schwelle (Kraftaufwand über einen kurzen Zeitraum)"
       },
       {
-        "step": "06",
+        "step": "6",
         "title": "Beweglichkeit & Mobilität",
         "description": "Functional Movement Screen (FMS) und Beweglichkeitsmessungen (Range of Motion bei Knie, Hüfte, Schulter etc.)"
       },
       {
-        "step": "07",
+        "step": "7",
         "title": "Stabilität & Koordination",
         "description": "Einbeinstand-Test, Y-Balance-Test, Core-Stabilitätstest"
       }
     ],
     "analysis": [
       {
-        "step": "01",
+        "step": "1",
         "title": "Auswertung",
         "description": "Analyse aller erhoben Daten strukturiert und nachvollziehbar"
       },
       {
-        "step": "02",
+        "step": "2",
         "title": "Stärken und Schwächen",
         "description": "Auswertung zeigt individuelle Ressourcen – aber auch gezielte Ansatzpunkte für Verbesserung"
       },
       {
-        "step": "03",
+        "step": "3",
         "title": "Optimierung",
         "description": "Konkrete und praxisnahe Handlungsempfehlungen basierend auf den Ergebnissen"
       },
       {
-        "step": "04",
+        "step": "4",
         "title": "Erstellung Trainingsplan",
         "description": "Erstellung eines individuellen Trainingsplans - basierend auf den erhobene Daten, abgestimmt auf deine Ziele, deinen Alltag und sportl. Anforderungen"
       },
       {
-        "step": "05",
+        "step": "5",
         "title": "Verletzungsprävention",
         "description": "Erstellung einer Liste an Tipps zur Verletzungsprävention und Regeneration"
       }
