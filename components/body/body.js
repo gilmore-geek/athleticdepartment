@@ -176,7 +176,7 @@ function initBody(data) {
         const imageName = member.name.split(' ')[0].toLowerCase();
         return `
         <div class="team-member">
-          <div class="team-member-image" style="background-image: url('../../assets/images/${imageName}.png')"></div>
+          <div class="team-member-image" style="background-image: url('./assets/images/${imageName}.png')"></div>
           <h3>${member.name}</h3>
           <p class="title">${member.title}</p>
           <p class="credentials">${member.credentials}</p>
