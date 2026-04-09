@@ -27,7 +27,7 @@
   display: flex;
   position: relative;
   overflow: visible;
-  min-height: 600px;
+  height: 600px;
   background: linear-gradient(125deg, var(--color-light-100) 0%, var(--color-dark-900) 100%);
 }
 
@@ -42,6 +42,7 @@
   z-index: 1;
   overflow: hidden;
   flex-shrink: 0;
+  height: 100%;
 }
 
 .intro-card-toggle {
@@ -701,6 +702,7 @@
 @media (max-width: 768px) {
   .intro-benefits-overlay-section {
     flex-direction: column;
+    height: auto;
     min-height: auto;
   }
 
@@ -718,6 +720,10 @@
 
   .intro-benefits-card:not(.active) {
     display: block;
+  }
+
+  .benefits-card .intro-card-toggle {
+    display: none;
   }
 
   .intro-card.active,

@@ -3,6 +3,7 @@ function initBody(data) {
     const diagnosticsItems = document.querySelectorAll('[data-field="process.diagnostics"] .process-step');
     const analysisItems = document.querySelectorAll('[data-field="process.analysis"] .process-step');
     const maxLength = Math.max(diagnosticsItems.length, analysisItems.length);
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
     diagnosticsItems.forEach(item => {
       item.style.minHeight = '';
@@ -11,6 +12,10 @@ function initBody(data) {
     analysisItems.forEach(item => {
       item.style.minHeight = '';
     });
+
+    if (isMobile) {
+      return;
+    }
 
     for (let index = 0; index < maxLength; index += 1) {
       const diagnosticsItem = diagnosticsItems[index];
