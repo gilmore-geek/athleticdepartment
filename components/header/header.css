@@ -239,21 +239,28 @@
       flex-direction: column;
       gap: 0;
       padding: 1rem 1.5rem;
+      align-items: flex-end;
+      text-align: right;
 
       & li {
         border-bottom: none;
+        width: auto;
+        align-self: flex-end;
+        margin-left: auto;
       }
 
       & a {
-        display: block;
+        display: inline-block;
+        width: auto;
         padding: 1rem 0;
         border-bottom: none;
+        text-align: right;
       }
 
       & .has-submenu {
         & .submenu-trigger {
-          width: 100%;
-          text-align: left;
+          width: auto;
+          text-align: right;
           padding: 1rem 0;
           border-bottom: none;
         }
@@ -281,5 +288,22 @@
         display: block;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .header .nav-list {
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .header .nav-list li {
+    align-self: flex-end;
+    margin-left: auto;
+  }
+
+  .header .nav-list a,
+  .header .nav-list .submenu-trigger {
+    text-align: right;
   }
 }

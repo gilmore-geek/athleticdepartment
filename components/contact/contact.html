@@ -1,0 +1,46 @@
+<div class="footer-contact-form-content">
+  <h4>Kontakt</h4>
+  <p>Schreibe uns eine Nachricht — wir melden uns schnellstmöglich zurück.</p>
+
+  <form id="contactForm" class="footer-contact-form" action="https://formsubmit.co/ajax/extraordinarily@hotmail.de" method="POST" novalidate autocomplete="off" aria-label="Kontaktformular">
+    <input type="hidden" name="_subject" value="Neue Kontaktanfrage von der Website">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" id="contactNextUrl" name="_next" value="">
+
+    <div class="sr-only">
+      <label for="footerWebsite">Bitte leer lassen</label>
+      <input id="footerWebsite" name="website" type="text" autocomplete="off" tabindex="-1">
+    </div>
+
+    <div class="footer-form-row footer-form-row-split">
+      <div class="footer-form-field">
+        <label for="footerVorname">Vorname <span aria-hidden="true">*</span></label>
+        <input id="footerVorname" name="vorname" type="text" autocomplete="given-name" required maxlength="50" placeholder="Max">
+      </div>
+
+      <div class="footer-form-field">
+        <label for="footerName">Name <span aria-hidden="true">*</span></label>
+        <input id="footerName" name="name" type="text" autocomplete="family-name" required maxlength="50" placeholder="Mustermann">
+      </div>
+    </div>
+
+    <div class="footer-form-field">
+      <label for="footerEmail">E-Mail <span aria-hidden="true">*</span></label>
+      <input id="footerEmail" name="email" type="email" autocomplete="email" required maxlength="80" placeholder="max@beispiel.de">
+    </div>
+
+    <div class="footer-form-field">
+      <label for="footerTelefon">Telefon (optional)</label>
+      <input id="footerTelefon" name="telefon" type="tel" autocomplete="tel" maxlength="30" placeholder="+49 123 456 7890">
+    </div>
+
+    <div class="footer-form-field">
+      <label for="footerNachricht">Nachricht <span aria-hidden="true">*</span></label>
+      <textarea id="footerNachricht" name="nachricht" rows="5" required maxlength="1000" placeholder="Deine Nachricht"></textarea>
+    </div>
+
+    <button type="submit" class="footer-contact-submit">Nachricht senden</button>
+    <div id="contactFormStatus" class="footer-form-status" aria-live="polite"></div>
+  </form>
+</div>

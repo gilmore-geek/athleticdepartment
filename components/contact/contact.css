@@ -1,0 +1,100 @@
+.footer-contact-form-content {
+  padding: 1rem 0;
+}
+
+.footer-contact-form-content h4 {
+  margin: 0 0 0.75rem;
+  color: var(--color-light-50);
+  font-size: 1.2rem;
+}
+
+.footer-contact-form-content p {
+  margin: 0 0 1.25rem;
+  color: var(--color-gray-400);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-contact-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.footer-form-row-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.footer-form-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.footer-form-field label {
+  color: var(--color-light-50);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.footer-contact-form input,
+.footer-contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.35rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-light-50);
+  padding: 0.95rem 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-contact-form input:focus,
+.footer-contact-form textarea:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+.footer-contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.footer-contact-submit {
+  border: none;
+  border-radius: 0.35rem;
+  background: var(--color-primary);
+  color: var(--color-light-50);
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-contact-submit:hover,
+.footer-contact-submit:focus-visible {
+  transform: translateY(-1px);
+  background: var(--color-primary-dark);
+}
+
+.footer-form-status {
+  margin-top: 0.25rem;
+  min-height: 2rem;
+  color: var(--color-gray-300);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-form-status.error {
+  color: var(--color-danger);
+}
+
+.footer-form-status.success {
+  color: var(--color-success);
+}
+
+@media (max-width: 768px) {
+  .footer-form-row-split {
+    grid-template-columns: 1fr;
+  }
+}
