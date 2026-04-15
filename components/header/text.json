@@ -2,7 +2,6 @@
   "nav": {
     "logo": "Athletik Dept",
     "items": [
-      { "label": "Home", "href": "./index.html" },
       {
         "label": "Services",
         "href": "./index.html#services",

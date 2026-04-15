@@ -718,20 +718,21 @@
     background: var(--color-light-50);
     border-radius: 0.75rem;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
+    overflow: visible;
   }
 
   .cta-section .cta-form-frame {
     position: relative;
     width: 100%;
-    min-height: 450px;
-    overflow: hidden;
+    min-height: auto;
+    overflow: visible;
     background: var(--color-light-50);
   }
 
   .cta-section .cta-form-iframe {
     width: 100%;
-    min-height: 450px;
+    min-height: 850px;
+    height: auto;
     border: 0;
     display: block;
   }
@@ -739,6 +740,11 @@
 @media (max-width: 768px) {
   .cta-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .cta-section .cta-copy {
+    text-align: center;
   }
 
   .cta-section .cta-form-card {
@@ -746,7 +752,14 @@
   }
 
   .cta-section .cta-form-frame {
-    min-height: 320px;
+    min-height: auto;
+  }
+
+  .cta-section .cta-form-iframe {
+    min-height: 900px;
+    height: auto;
+    max-height: none;
+    overflow: visible;
   }
 
   .cta-section .cta-button {
