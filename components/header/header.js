@@ -7,11 +7,20 @@ function initHeader(data) {
     return;
   }
 
-  const navList = headerNav.querySelector('.nav-list');
+  let navList = headerNav.querySelector('.nav-list');
 
   if (!navList) {
     return;
   }
+
+  navList.classList.add('nav-list-right');
+  const navCenter = document.createElement('div');
+  navCenter.className = 'nav-center';
+  const navGroups = document.createElement('div');
+  navGroups.className = 'nav-groups';
+  headerNav.replaceChild(navGroups, navList);
+  navGroups.appendChild(navList);
+  navGroups.appendChild(navCenter);
 
   let headerActions = headerContainer.querySelector('.header-actions');
   if (!headerActions) {
@@ -29,7 +38,7 @@ function initHeader(data) {
     cartButton.href = './cart.html';
     cartButton.setAttribute('aria-label', 'Warenkorb');
     cartButton.innerHTML = `
-      <span class="cart-icon" aria-hidden="true">🛒</span>
+      <i class="fa-solid fa-cart-shopping cart-icon" aria-hidden="true"></i>
       <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
     `;
     headerActions.appendChild(cartButton);
@@ -85,7 +94,7 @@ function initHeader(data) {
     }
     const count = getCartCount();
     cartCountElement.textContent = count;
-    cartCountElement.style.opacity = count > 0 ? '1' : '0.6';
+    cartCountElement.style.display = count > 0 ? 'inline-flex' : 'none';
   };
 
   const ensureCartModule = () => {
@@ -120,7 +129,10 @@ function initHeader(data) {
   // Navigation Items laden
   if (data.nav && data.nav.items) {
     navList.innerHTML = '';
+    navCenter.innerHTML = '';
+
     data.nav.items.forEach(item => {
+      const isContact = item.label.trim().toLowerCase() === 'kontakt';
       const li = document.createElement('li');
       const hasChildren = Array.isArray(item.children) && item.children.length > 0;
 
@@ -183,7 +195,20 @@ function initHeader(data) {
         });
       }
 
-      navList.appendChild(li);
+      if (isContact) {
+        const contactLink = document.createElement('a');
+        contactLink.href = item.href;
+        contactLink.textContent = item.label;
+        contactLink.className = 'nav-contact-link';
+        contactLink.addEventListener('click', () => {
+          headerNav.classList.remove('active');
+          menuToggle.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+        navCenter.appendChild(contactLink);
+      } else {
+        navList.appendChild(li);
+      }
     });
   }
 
