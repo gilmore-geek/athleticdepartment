@@ -1,8 +1,9 @@
 function initHeader(data) {
   const headerNav = document.getElementById('headerNav');
   const menuToggle = document.getElementById('menuToggle');
+  const headerContainer = headerNav ? headerNav.closest('.header-container') : null;
 
-  if (!headerNav || !menuToggle) {
+  if (!headerNav || !menuToggle || !headerContainer) {
     return;
   }
 
@@ -10,6 +11,28 @@ function initHeader(data) {
 
   if (!navList) {
     return;
+  }
+
+  let headerActions = headerContainer.querySelector('.header-actions');
+  if (!headerActions) {
+    headerActions = document.createElement('div');
+    headerActions.className = 'header-actions';
+    headerContainer.insertBefore(headerActions, menuToggle);
+  }
+
+  const cartButtonId = 'headerCartButton';
+  let cartButton = headerActions.querySelector(`#${cartButtonId}`);
+  if (!cartButton) {
+    cartButton = document.createElement('a');
+    cartButton.id = cartButtonId;
+    cartButton.className = 'header-cart-button';
+    cartButton.href = './cart.html';
+    cartButton.setAttribute('aria-label', 'Warenkorb');
+    cartButton.innerHTML = `
+      <span class="cart-icon" aria-hidden="true">🛒</span>
+      <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
+    `;
+    headerActions.appendChild(cartButton);
   }
 
   const closeAllSubmenus = () => {
@@ -21,6 +44,78 @@ function initHeader(data) {
       }
     });
   };
+
+  const getCartCountFromStorage = () => {
+    const parseItems = raw => {
+      try {
+        const items = JSON.parse(raw);
+        return Array.isArray(items) ? items.reduce((sum, item) => sum + (item.quantity || 0), 0) : 0;
+      } catch (error) {
+        return 0;
+      }
+    };
+
+    try {
+      const stored = localStorage.getItem('athletikdept.cart');
+      if (stored) {
+        return parseItems(stored);
+      }
+    } catch (error) {
+      // ignore localStorage errors
+    }
+
+    try {
+      return parseItems(window.name || '');
+    } catch (error) {
+      return 0;
+    }
+  };
+
+  const getCartCount = () => {
+    if (window.cart && typeof window.cart.getTotalCount === 'function') {
+      return window.cart.getTotalCount();
+    }
+    return getCartCountFromStorage();
+  };
+
+  const updateCartCount = () => {
+    const cartCountElement = cartButton.querySelector('.cart-count');
+    if (!cartCountElement) {
+      return;
+    }
+    const count = getCartCount();
+    cartCountElement.textContent = count;
+    cartCountElement.style.opacity = count > 0 ? '1' : '0.6';
+  };
+
+  const ensureCartModule = () => {
+    return new Promise(resolve => {
+      if (window.cart) {
+        resolve();
+        return;
+      }
+
+      const existingScript = document.querySelector('script[src="./components/cart/cart.js"]');
+      if (existingScript) {
+        existingScript.addEventListener('load', () => resolve());
+        existingScript.addEventListener('error', () => resolve());
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = './components/cart/cart.js';
+      script.async = true;
+      script.onload = () => resolve();
+      script.onerror = () => resolve();
+      document.head.appendChild(script);
+    });
+  };
+
+  ensureCartModule().then(() => {
+    updateCartCount();
+  });
+
+  window.addEventListener('cartupdated', updateCartCount);
 
   // Navigation Items laden
   if (data.nav && data.nav.items) {

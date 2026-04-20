@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Warenkorb für Trainingspläne und Zusatzpakete von Athletik Dept.">
+  <meta name="theme-color" content="#53687C">
+  <title>Warenkorb | Athletik Dept</title>
+
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./components/header/header.css">
+  <link rel="stylesheet" href="./components/cart/cart.css">
+  <link rel="stylesheet" href="./components/footer/footer.css">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <a href="#main" class="skip-to-main">Zum Hauptinhalt springen</a>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="./index.html" class="logo-link">
+          <img src="./assets/images/logo+weiß.webp" alt="Athletik Dept Logo" class="logo-image">
+          <span class="logo-text" data-field="nav.logo">Athletik Dept</span>
+        </a>
+      </div>
+      <button class="header-menu-toggle" id="menuToggle" aria-label="Navigation toggle" aria-expanded="false">
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+      </button>
+      <nav class="header-nav" id="headerNav">
+        <ul class="nav-list" data-field="nav.items">
+          <!-- Dynamisch gefüllt von JavaScript -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="cart-page">
+      <div class="container">
+        <div class="cart-header">
+          <h1 class="cart-heading">Warenkorb</h1>
+          <p class="cart-intro">Hier siehst du alle ausgewählten Trainingspakete, Bundle-Angebote und Zusatzleistungen. Du kannst einzelne Einträge löschen und eine Preisübersicht prüfen.</p>
+        </div>
+        <div id="cartPageContainer"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footerComponent"></div>
+
+  <script src="./components/header/header.js"></script>
+  <script src="./components/cart/cart.js"></script>
+  <script src="./components/footer/footer.js"></script>
+  <script>
+    function getNestedValue(obj, path) {
+      return path.split('.').reduce((current, prop) => current?.[prop], obj);
+    }
+
+    function loadDataFields(data) {
+      const elements = document.querySelectorAll('[data-field]');
+      elements.forEach(element => {
+        const fieldPath = element.getAttribute('data-field');
+        const value = getNestedValue(data, fieldPath);
+        if (value !== undefined) {
+          element.textContent = value;
+        }
+      });
+    }
+
+    fetch('./data/text.json')
+      .then(response => response.json())
+      .then(data => {
+        loadDataFields(data);
+
+        if (window.initHeader) window.initHeader(data);
+        if (window.initFooter) window.initFooter(data);
+        if (window.initCartPage) {
+          window.initCartPage(data);
+        } else if (window.cart && typeof window.cart.initCartPage === 'function') {
+          window.cart.initCartPage();
+        }
+      })
+      .catch(error => console.error('Fehler beim Laden der Warenkorb-Seite:', error));
+  </script>
+</body>
+</html>

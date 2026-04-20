@@ -16,7 +16,8 @@
       "buttons": [
         {
           "id": "beginner-fullbody",
-          "label": "29 EUR | Anfänger (Ganzkörper) kaufen"
+          "label": "29 EUR | Anfänger (Ganzkörper) kaufen",
+          "price": 29
         }
       ]
     },
@@ -33,11 +34,13 @@
       "buttons": [
         {
           "id": "advanced-fullbody",
-          "label": "59 EUR | Fortgeschritten (Ganzkörper) kaufen"
+          "label": "59 EUR | Fortgeschritten (Ganzkörper) kaufen",
+          "price": 59
         },
         {
           "id": "advanced-2split",
-          "label": "59 EUR | Fortgeschritten (2er Split) kaufen"
+          "label": "59 EUR | Fortgeschritten (2er Split) kaufen",
+          "price": 59
         }
       ]
     },
@@ -54,11 +57,13 @@
       "buttons": [
         {
           "id": "elite-fullbody",
-          "label": "89 EUR | Elite (Ganzkörper) kaufen"
+          "label": "89 EUR | Elite (Ganzkörper) kaufen",
+          "price": 89
         },
         {
           "id": "elite-2split",
-          "label": "89 EUR | Elite (2er Split) kaufen"
+          "label": "89 EUR | Elite (2er Split) kaufen",
+          "price": 89
         }
       ]
     }
@@ -69,26 +74,35 @@
     {
       "id": "bundle-1",
       "title": "Bundle I: Anfänger (Ganzkörper) + Fortgeschritten (Ganzkörper)",
-      "button": "79 EUR | Bundle I kaufen"
+      "button": "79 EUR | Bundle I kaufen",
+      "price": 79
     },
     {
       "id": "bundle-2",
       "title": "Bundle II: Anfänger (Ganzkörper) + Fortgeschritten (Ganzkörper) + Elite (Ganzkörper)",
-      "button": "159 EUR | Bundle II kaufen"
+      "button": "159 EUR | Bundle II kaufen",
+      "price": 159
     },
     {
       "id": "bundle-3",
       "title": "Bundle III: Fortgeschritten (Ganzkörper) + Elite (Ganzkörper)",
-      "button": "129 EUR | Bundle III kaufen"
+      "button": "129 EUR | Bundle III kaufen",
+      "price": 129
     },
     {
       "id": "bundle-4",
       "title": "Bundle IV: Fortgeschritten (2er Split) + Elite (2er Split)",
-      "button": "129 EUR | Bundle IV kaufen"
+      "button": "129 EUR | Bundle IV kaufen",
+      "price": 129
     }
   ],
   "addon_heading": "Form-Check-Service (Add-on)",
   "addon_description": "Inhalt: einmaliger Form-Check der Übungsausführungen.",
   "addon_note": "Hinweis: Bitte melde dich nach dem Kauf bei uns (z. B. über das Kontaktformular), um weitere Details zu klären.",
+  "addon": {
+    "id": "addon-form-check",
+    "title": "Form-Check-Service",
+    "price": 15
+  },
   "addon_button": "15 EUR | Form-Check-Service buchen"
 }
